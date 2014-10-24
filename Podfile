@@ -5,3 +5,7 @@ target "TestDriveNavigation" do
 
 end
 
+target "Specs" do
+  pod 'PivotalCoreKit'
+  pod 'PivotalCoreKit/UIKit/SpecHelper/Extensions'
+end

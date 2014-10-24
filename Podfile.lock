@@ -1,1 +1,18 @@
+PODS:
+  - PivotalCoreKit (0.0.3):
+    - PivotalCoreKit/Core
+  - PivotalCoreKit/Core (0.0.3):
+    - PivotalCoreKit/Foundation/Core
+    - PivotalCoreKit/UIKit/Core
+  - PivotalCoreKit/Foundation/Core (0.0.3)
+  - PivotalCoreKit/UIKit/Core (0.0.3)
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.0.3)
+
+DEPENDENCIES:
+  - PivotalCoreKit
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions
+
+SPEC CHECKSUMS:
+  PivotalCoreKit: 6bd7f9e2b128c9699f660deaee9f8e8f77a7bd7d
+
 COCOAPODS: 0.34.1

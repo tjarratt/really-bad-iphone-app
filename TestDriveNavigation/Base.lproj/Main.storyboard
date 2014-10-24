@@ -39,6 +39,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCr-ZO-6iV">
+                                <rect key="frame" x="277" y="361" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bb-sV-GQP">
+                                <rect key="frame" x="252" y="428" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-8P-Ene">
+                                <rect key="frame" x="83" y="116" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -46,9 +60,17 @@
                             <constraint firstItem="XOF-0y-Oc3" firstAttribute="leading" secondItem="ekm-qc-Lbg" secondAttribute="leadingMargin" id="S0y-E8-04B"/>
                             <constraint firstAttribute="centerY" secondItem="XOF-0y-Oc3" secondAttribute="centerY" id="Wss-ox-mIL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CPH-8P-Ene"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="uR7-xf-Uab"/>
+                    <navigationItem key="navigationItem" id="uR7-xf-Uab">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="tM5-dz-5Pf"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="input" destination="8bb-sV-GQP" id="UAc-ja-9jQ"/>
                         <outlet property="welcomeMessage" destination="XOF-0y-Oc3" id="9Qe-Eb-ufM"/>
                     </connections>
                 </viewController>

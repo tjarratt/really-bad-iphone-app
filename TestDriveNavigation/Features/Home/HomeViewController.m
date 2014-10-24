@@ -2,6 +2,7 @@
 
 @interface HomeViewController ()
 @property (strong, nonatomic, readwrite) IBOutlet UILabel *welcomeMessage;
+@property (strong, nonatomic, readwrite) IBOutlet UITextField *input;
 @end
 
 @implementation HomeViewController
@@ -13,6 +14,10 @@
     self.navigationItem.titleView = imageView;
 
     [super viewDidLoad];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.input resignFirstResponder];
 }
 
 @end

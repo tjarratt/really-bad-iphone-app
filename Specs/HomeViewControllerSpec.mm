@@ -1,5 +1,7 @@
 #import <Cedar-iOS/Cedar.h>
+#import <PivotalCoreKit/UIControl+Spec.h>
 
+#import "UIColor+TestDrive.h"
 #import "HomeViewController.h"
 
 using namespace Cedar::Matchers;
@@ -25,6 +27,24 @@ describe(@"The initial view controller", ^{
 
     it(@"should have a logo in the navigation bar", ^{
         subject.navigationItem.titleView should be_instance_of([UIImageView class]);
+    });
+
+    context(@"when the user taps on the textfield", ^{
+        beforeEach(^{
+            spy_on(subject.input);
+            [subject.input tap];
+        });
+
+        context(@"when the user taps outside the textfield", ^{
+            beforeEach(^{
+                [subject touchesBegan:nil withEvent:nil];
+                [subject touchesEnded:nil withEvent:nil];
+            });
+
+            it(@"should dismiss the keyboard when the user taps outside of the textfield", ^{
+                subject.input should have_received(@selector(resignFirstResponder));
+            });
+        });
     });
 });
 
