@@ -20,7 +20,7 @@ describe(@"The initial view controller", ^{
     });
 
     it(@"should have a welcome message", ^{
-        subject.welcomeMessage.text should equal(@"Welcome User!");
+        subject.welcomeMessage.text should equal(@"Welcome, User!");
     });
 
     it(@"should have a logo in the navigation bar", ^{

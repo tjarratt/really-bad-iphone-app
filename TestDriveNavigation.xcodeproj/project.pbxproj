@@ -24,6 +24,8 @@
 		AE89812D19FAD45D00B62EB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE89812C19FAD45D00B62EB3 /* HomeViewController.m */; };
 		AE89812E19FAD45D00B62EB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE89812C19FAD45D00B62EB3 /* HomeViewController.m */; };
 		AE89813019FAD5CA00B62EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6DCD5919FAD1C8006CFBB5 /* Main.storyboard */; };
+		AE89816719FADEA200B62EB3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE89816619FADEA200B62EB3 /* logo.png */; };
+		AE89816819FADEA200B62EB3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE89816619FADEA200B62EB3 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,7 @@
 		AE89812519FAD31300B62EB3 /* HomeViewControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeViewControllerSpec.mm; sourceTree = "<group>"; };
 		AE89812B19FAD45D00B62EB3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Features/Home/HomeViewController.h; sourceTree = "<group>"; };
 		AE89812C19FAD45D00B62EB3 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Features/Home/HomeViewController.m; sourceTree = "<group>"; };
+		AE89816619FADEA200B62EB3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		AE6DCD4F19FAD1C8006CFBB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE89816619FADEA200B62EB3 /* logo.png */,
 				AE6DCD5019FAD1C8006CFBB5 /* Info.plist */,
 				AE6DCD5119FAD1C8006CFBB5 /* main.m */,
 			);
@@ -243,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE89816719FADEA200B62EB3 /* logo.png in Resources */,
 				AE6DCD5B19FAD1C8006CFBB5 /* Main.storyboard in Resources */,
 				AE6DCD6019FAD1C8006CFBB5 /* LaunchScreen.xib in Resources */,
 				AE6DCD5D19FAD1C8006CFBB5 /* Images.xcassets in Resources */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE89812019FAD31200B62EB3 /* Specs-Prefix.pch in Resources */,
+				AE89816819FADEA200B62EB3 /* logo.png in Resources */,
 				AE89811E19FAD31200B62EB3 /* Specs-Info.plist in Resources */,
 				AE89812419FAD31300B62EB3 /* Default-568h@2x.png in Resources */,
 				AE89813019FAD5CA00B62EB3 /* Main.storyboard in Resources */,
