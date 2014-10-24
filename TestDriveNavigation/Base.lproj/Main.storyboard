@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AvC-S5-QUF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rKY-1v-T1N">
+            <objects>
+                <navigationController id="AvC-S5-QUF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="snN-6A-NA9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZO9-YX-Ajd" kind="relationship" relationship="rootViewController" id="yQf-mI-HfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiB-g1-vN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="326"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="fJL-5Q-b2l">
+            <objects>
+                <viewController id="ZO9-YX-Ajd" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pwD-3u-5lW"/>
+                        <viewControllerLayoutGuide type="bottom" id="4fY-6u-92B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekm-qc-Lbg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOF-0y-Oc3" userLabel="Welcome Message">
+                                <rect key="frame" x="16" y="289" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XOF-0y-Oc3" secondAttribute="trailing" id="QSI-XZ-vpX"/>
+                            <constraint firstItem="XOF-0y-Oc3" firstAttribute="leading" secondItem="ekm-qc-Lbg" secondAttribute="leadingMargin" id="S0y-E8-04B"/>
+                            <constraint firstAttribute="centerY" secondItem="XOF-0y-Oc3" secondAttribute="centerY" id="Wss-ox-mIL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uR7-xf-Uab"/>
+                    <connections>
+                        <outlet property="welcomeMessage" destination="XOF-0y-Oc3" id="9Qe-Eb-ufM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uld-v8-dM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="327"/>
+        </scene>
+    </scenes>
+</document>
